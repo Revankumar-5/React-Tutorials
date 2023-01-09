@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import UseTimeoutExample from "./UseTimeoutExample"
-export default function TimeoutComponent() {
+export default function useTimeIndex() {
 const [count, setCount] = useState (10)
 const { clear, reset} = UseTimeoutExample(() => setCount(0), 1000)
+
 
 return (<>
 

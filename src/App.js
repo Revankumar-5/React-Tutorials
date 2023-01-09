@@ -1,34 +1,12 @@
-import { useState,useEffect, useRef,usePrevious } from "react";
-import './App.css';
-import ReducerExample from './ReducerExample'
-
+// import Index from "./1.UseLocalstorage/Index"
+// import ToggleIndex from "./2.ToggleValue/ToggleIndex"
+// import UseTimeoutIndex from "./3.UseTimeout/UseTimeOut"
+// import UseArrayIndex from "./5.useArray/UseArrayIndex"
+import UseUpdateEffectIndex from "./4.useUpdateEffect/UseUpdateEffectIndex"
 function App() {
 
-  const [count, setCount] = useState(0);
- 
-  const prevCount = usePrevious(count);
-  console.log(count);
-  
-
-  function usePrevious(value) {
-    const ref = useRef();
-    console.log(ref);
-    useEffect(() => {
-      ref.current = value;
-    }, [value]);
-    
-    console.log(ref.current);
-    return ref.current;
-  }
   return (
-    <div>
-      <h1>
-        Now: {count} ----- before: {prevCount}
-      </h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-
-      <ReducerExample />
-    </div>
+    <UseUpdateEffectIndex />
   );
 }
 

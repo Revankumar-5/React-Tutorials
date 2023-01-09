@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-// import App from './App';
+// import './index.css';
+import App from './App';
 // import ReducerExample from './App';
 // import LayoutEffectExample from './LayoutEffectExample'
 // import reportWebVitals from './reportWebVitals';
 // import DeferredValueExample from './DeferredValueExample'
 // import UseTransitionExample from './UseTransitionExample'
-import TimeoutComponent from './UseTimeout/UseTimeOut'
+// import TimeoutComponent from './UseTimeout/UseTimeOut'
+// import ReducerExampleIndex from "./ReducerExample/ReducerExampleIndex"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,7 +16,9 @@ root.render(
     {/* <LayoutEffectExample /> */}
     {/* <DeferredValueExample /> */}
     {/* <UseTransitionExample /> */}
-    <TimeoutComponent />
+    {/* <TimeoutComponent /> */}
+    <App/>
+    {/* <ReducerExampleIndex /> */}
 
   </React.StrictMode>
 );

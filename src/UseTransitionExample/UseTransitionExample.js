@@ -4,10 +4,7 @@ function UseTransitionExample() {
   const [isPending, startTransition] = useTransition();
   const [input, setInput] = useState("");
   const [list, setList] = useState([]);
-  const [lists, setLists] = useState(100);
-  
-  const LIST_SIZE = 20000;
-
+ 
   function handleChange(e) {
     setInput(e.target.value);
     startTransition(() => {
